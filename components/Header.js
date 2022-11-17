@@ -4,11 +4,13 @@ function Header() {
   return (
     <header>
       <div>
-        <div>
+        <div className="flex items-center bg-amazon_blue">
           <Image
             src="https://links.papareact.com/f90"
             width={150}
-            height={40}
+            height={60}
+            objectFit="contain"
+            className="cursor-pointer"
           />
         </div>
       </div>
