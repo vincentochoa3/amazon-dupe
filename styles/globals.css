@@ -4,10 +4,16 @@
 
 @layer components {
   .link {
-    cursor: pointer;
+    @apply cursor-pointer;
+    @apply hover:underline;
   }
 
-  .link:hover {
-    text-decoration: underline;
+  .button {
+    @apply p-2 text-xs bg-gradient-to-b from-yellow-200 to-yellow-400 border-yellow-300 rounded-sm;
+    @apply md:text-sm;
+    @apply focus:outline-none;
+    @apply active:from-yellow-500;
+    @apply active:to-yellow-300;
   }
+
 }
