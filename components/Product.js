@@ -8,7 +8,7 @@ function Product({ id, title, price, description, category, image }) {
   return (
     <div className="relative flex flex-col m-5 bg-white z-30 p-10">
       <p className="absolute top-2 right-2 text-xs italic text-gray-400">{category}</p>
-      <Image src={image} height={200} width={200} className="self-center" />
+      <Image src={image} height={200} width={200} objectFit="contain" className="self-center object-contain" style={{ width: '200px', height: '200px' }} />
       <h4 className="my-3">{title}</h4>
       <div className="flex">
         {Array(5).fill().map((_, i) =>
