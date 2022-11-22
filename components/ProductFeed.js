@@ -14,12 +14,14 @@ function ProductFeed({ products }) {
           image={image}
         />
       )}
+      <div className="md:col-span-full w-full flex justify-center">
+        <img
+          className="w-full max-w-7xl"
+          src="https://links.papareact.com/7ma"
+          alt="Image not found."
+        />
+      </div>
 
-      <img
-        className="md:col-span-full self-center"
-        src="https://links.papareact.com/7ma"
-        alt="Image not found."
-      />
 
       <div className="md:col-span-2">
         {products.slice(4, 5).map(({ id, title, price, description, category, image }) =>
